@@ -1,0 +1,35 @@
+using namespace std;
+int main(){
+    int akhir;
+    int tes;
+    int uts;
+    int uas;
+    int tugas;
+
+    cout << "Masukkan Nilai Tes: ";
+    cin >>tes;
+
+    cout << "Masukkan Nilai UTS: ";
+    cin >>uts;
+
+    cout << "Masukkan Nilai UAS: ";
+    cin >>uas;
+
+    cout << "Masukkan Nilai Tugas: ";
+    cin >>tugas;
+
+    akhir=(0.20*tes)+(0.30*uts)+(0.30*uas)+(0.20*tugas);
+
+    if(akhir<=50){
+        cout<<"D";
+
+    }else if(akhir>=51 && akhir<=70){
+        cout<<"C";
+
+    }else if(akhir>=71 && akhir<=80){
+        cout<<"B";
+
+    }else{cout<<"A";}
+
+    return 0;
+}
